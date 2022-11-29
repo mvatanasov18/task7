@@ -9,10 +9,22 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body>
+  <body onclick="func()">
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
+    
   </body>
+<script>
+  
+  function func(){
+   for(let i=0;i<5;i++){ 
+  var elemDiv = document.createElement('article');
+  elemDiv.className="message";
+  elemDiv.textContent="hui";
+  document.body.appendChild(elemDiv);
+   }
+  };
+</script>
 </html>
